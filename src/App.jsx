@@ -1,9 +1,14 @@
 import "./App.css";
-import mail from "./assets/mail.svg";
-import linkedin from "./assets/linkedin.svg";
+import mail_logo from "./assets/mail.svg";
+import linkedin_logo from "./assets/linkedin.svg";
 import picture from "./assets/appleprofilepic.jpeg";
-import github from "./assets/github.svg";
-import facebook from "./assets/facebook.svg";
+import github_logo from "./assets/github.svg";
+import facebook_logo from "./assets/facebook.svg";
+
+const linkedIn_link = "https://www.linkedin.com/in/carmelaanne-medina/";
+const facebook_link = "https://www.facebook.com/";
+const github_link = "https://github.com/AnneMedina";
+const mail_link = "mailto:anne.medina.au@gmail.com";
 
 function App() {
   return (
@@ -18,19 +23,16 @@ function App() {
           </a>
 
           <div className="connect">
-            <a
-              href="mailto:anne.medina.au@gmail.com"
-              className="connect-links mail"
-            >
-              <img className="connect-logos" src={mail} />
+            <a href={mail_link} className="connect-links mail">
+              <img className="connect-logos" src={mail_logo} />
               Email
             </a>
             <a
-              href="https://www.linkedin.com/in/carmelaanne-medina/"
+              href={linkedIn_link}
               className="connect-links linkedin"
               target="_blank"
             >
-              <img className="connect-logos" src={linkedin} />
+              <img className="connect-logos" src={linkedin_logo} />
               LinkedIn
             </a>
           </div>
@@ -54,6 +56,20 @@ function App() {
             </p>
           </div>
         </div>
+        <footer>
+          {/* <a href={linkedIn_link}>
+            <img src={linkedin_logo} alt="LinkedIn" className="footer-icons" />
+          </a> */}
+          <a href={github_link}>
+            <img src={github_logo} alt="Github" className="footer-icons" />
+          </a>
+          <a href={facebook_link}>
+            <img src={facebook_logo} alt="Facebook" className="footer-icons" />
+          </a>
+          {/* <a href={mail_link}>
+            <img src={mail_logo} alt="Mail" className="footer-icons" />
+          </a> */}
+        </footer>
       </div>
     </div>
   );
