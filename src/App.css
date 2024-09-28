@@ -1,42 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.main-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #1a1b21;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .card {
-  padding: 2em;
+  background-color: #04191d;
+  color: white;
+  width: 320px;
+  overflow: hidden;
+  margin-top: 30px;
+  border-radius: 0.7rem;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.read-the-docs {
-  color: #888;
+.card-image {
+  width: 100%;
+  height: 330px;
+  padding: 0;
+  margin: 0;
+}
+
+.card-text {
+  padding: 0.5rem 2em;
+}
+
+.name {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.profession {
+  text-align: center;
+  color: #f3bf99;
+  font-size: 0.8rem;
+}
+
+.website {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: white;
+  font-size: 0.8rem;
+  padding: 0.8rem;
+}
+
+.connect {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px 30px;
+}
+
+.connect-links {
+  text-decoration: none;
+  font-weight: 600;
+  background-color: whitesmoke;
+  font-size: 0.9rem;
+  align-items: center;
+  /* width: 45%; */
+  border-radius: 0.35rem;
+  display: flex;
+  justify-content: center;
+}
+
+.connect-logos {
+  padding: 0.25rem;
+}
+
+.mail {
+  background-color: white;
+  color: black;
+  padding: 0.4rem 1.75rem;
+}
+
+.mail:hover {
+  color: black;
+}
+
+.linkedin {
+  background: #5093e2;
+  color: white;
+  padding: 0.4rem 1.2rem;
+}
+
+.linkedin:hover {
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: black;
+  padding: 10px;
+  margin-top: auto;
+}
+
+.footer-icons {
+  height: 30px;
+  width: 30px;
+  /* background-color: gray; */
+  border-radius: 0.2rem;
+}
+
+h3 {
+  margin: 0px 0px 0px;
+}
+
+p {
+  margin: 0px 0px 20px;
 }
