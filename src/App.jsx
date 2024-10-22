@@ -1,9 +1,9 @@
 import "./App.css";
 import mail_logo from "./assets/mail.svg";
-import linkedin_logo from "./assets/linkedin.svg";
+import linkedin_logo from "./assets/linkedin.png";
 import picture from "./assets/appleprofilepic.jpeg";
-import github_logo from "./assets/github.svg";
-import facebook_logo from "./assets/facebook.svg";
+import github_logo from "./assets/github.png";
+import facebook_logo from "./assets/facebook.png";
 
 const linkedIn_link = "https://www.linkedin.com/in/carmelaanne-medina/";
 const facebook_link = "https://www.facebook.com/";
@@ -18,7 +18,11 @@ function App() {
         <div className="card-text">
           <div className="name">Anne Medina</div>
           <div className="profession">Web Application Developer</div>
-          <a href="https://www.gmanetwork.com/news" className="website">
+          <a
+            href="https://www.gmanetwork.com/news"
+            className="website"
+            target="_blank"
+          >
             annemedina.website
           </a>
 
@@ -57,18 +61,12 @@ function App() {
           </div>
         </div>
         <footer>
-          {/* <a href={linkedIn_link}>
-            <img src={linkedin_logo} alt="LinkedIn" className="footer-icons" />
-          </a> */}
-          <a href={github_link}>
+          <a href={github_link} target="_blank">
             <img src={github_logo} alt="Github" className="footer-icons" />
           </a>
-          <a href={facebook_link}>
+          <a href={facebook_link} target="_blank">
             <img src={facebook_logo} alt="Facebook" className="footer-icons" />
           </a>
-          {/* <a href={mail_link}>
-            <img src={mail_logo} alt="Mail" className="footer-icons" />
-          </a> */}
         </footer>
       </div>
     </div>
