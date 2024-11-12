@@ -18,8 +18,8 @@ function App() {
         <div className="card-text">
           <div className="name">Anne Medina</div>
           <div className="profession">Web Application Developer</div>
-          <a href="https://www.gmanetwork.com/news" className="website">
-            annemedina.website
+          <a href={linkedIn_link} className="website">
+            annemedina.com
           </a>
 
           <div className="connect">
@@ -40,9 +40,9 @@ function App() {
           <div className="about">
             <h3>About</h3>
             <p>
-              I am a full-stack developer proficient in JavaScript, CSS, HTML,
-              and React for front-end development, as well as Node.js and PHP
-              for back-end solutions. I am committed to adhering to coding
+              I am seasoned full-stack web developer experienced in JavaScript, CSS, HTML,
+              and React for frontend development, and Node.js and PHP
+              for backend solutions. I am committed to adhering to coding
               standards, guidelines, and best practices, ensuring high-quality
               and maintainable code.
             </p>
@@ -52,7 +52,7 @@ function App() {
               I enjoy exploring and analyzing ideas that can benefit others. In
               my downtime, I find joy in sophisticated coloring books, where I
               experiment with blending colored pencils. I also play badminton
-              and love swimming during the summer months.
+              and love swimming during summer.
             </p>
           </div>
         </div>
