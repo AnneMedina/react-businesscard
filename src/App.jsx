@@ -9,6 +9,7 @@ const linkedIn_link = "https://www.linkedin.com/in/carmelaanne-medina/";
 const facebook_link = "https://www.facebook.com/";
 const github_link = "https://github.com/AnneMedina";
 const mail_link = "mailto:anne.medina.au@gmail.com";
+const tenzies_react ="https://annemedina-tenzies-react.netlify.app/";
 
 function App() {
   return (
@@ -18,8 +19,8 @@ function App() {
         <div className="card-text">
           <div className="name">Anne Medina</div>
           <div className="profession">Web Application Developer</div>
-          <a href={linkedIn_link} className="website">
-            annemedina.com
+          <a href={tenzies_react} className="website">
+            annemedina-tenzies-react
           </a>
 
           <div className="connect">
@@ -57,9 +58,9 @@ function App() {
           </div>
         </div>
         <footer>
-          {/* <a href={linkedIn_link}>
+          <a href={linkedIn_link}>
             <img src={linkedin_logo} alt="LinkedIn" className="footer-icons" />
-          </a> */}
+          </a>
           <a href={github_link}>
             <img src={github_logo} alt="Github" className="footer-icons" />
           </a>
